@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import ConnectButton from "../components/ConnectButton";
-import { NavBar } from "../components";
-import
+import { NavBar, SliderSection } from "../components";
 import { useSelector, useDispatch } from "react-redux";
 export default function Home() {
   const address = useSelector((state) => state.app.appInfo.address);
@@ -30,7 +29,7 @@ export default function Home() {
       </main> */}
       <section className="cattos">
         <NavBar />
-        <Slider />
+        <SliderSection />
       </section>
     </>
   );
