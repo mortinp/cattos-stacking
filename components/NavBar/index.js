@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/navbar.module.css";
+
 import { NavBarItem } from "../NavBarItem";
 
 export const NavBar = function index() {
@@ -38,10 +39,10 @@ export const NavBar = function index() {
             alt="missing"
           />
         </NavBarItem>
-        <li className={`${styles.cattos__bar}`}>
-          <div className="bar1"></div>
-          <div className="bar2"></div>
-          <div className="bar3"></div>
+        <li className={`${styles.cattos__box}`}>
+          <div className={`${styles.cattos__bar}`}></div>
+          <div className={`${styles.cattos__bar}`}></div>
+          <div className={`${styles.cattos__bar}`}></div>
         </li>
       </ul>
     </div>

@@ -28,6 +28,7 @@
   width: 100%;
   max-width: 24.375rem;
   margin: auto;
+  line-height: 3rem;
 }
 
 .cattos__detail {
@@ -48,9 +49,27 @@
 }
 
 .cattos__tabBox__slider {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
+.cattos__tabBox__slider li {
+  border: 2px solid #fff;
 
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 4px;
+
+  width: 145px;
+  margin: 0px 50px;
+}
+.cattos__tabBox__slider li a {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 700;
+}
 .cattos__bottom {
   padding: 10rem 0 3.125rem;
 }
@@ -68,4 +87,47 @@
 .cattos__tab__slider {
   width: 9.0625rem;
   margin: 0 3.125rem;
+}
+
+@media (max-width: 992px) {
+  .cattos__title {
+    font-size: 2.3rem;
+  }
+  .cattos__detail {
+    font-size: 1rem;
+  }
+  .cattos__number {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 762px) {
+  .cattos .cattos__tab--slider {
+    margin: 10px 20px;
+  }
+  .cattos__tabBox__slider li {
+    margin: 10px 20px;
+    max-width: 120px;
+    width: 100%;
+    padding: 6px;
+  }
+  .cattos__tabBox__slider li a {
+    font-size: 0.8rem;
+  }
+  .cattos__tabBox__slider {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .cattos__title {
+    font-size: 2rem;
+  }
+  .cattos__detail {
+    font-size: 0.9rem;
+  }
+  .cattos__number {
+    font-size: 1.9rem;
+  }
+  .cattos__cost {
+    font-size: 1rem;
+  }
 }

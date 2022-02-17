@@ -1,4 +1,5 @@
 .cattos__content {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 1.25rem;
@@ -16,9 +17,15 @@
 }
 
 .cattos__tabBox {
+  display: flex;
   align-items: center;
 }
-
+.cattos__tabBox li {
+  list-style-type: none;
+}
+.cattos__tabBox li a {
+  text-decoration: none;
+}
 .cattos__tab {
   border: 0.125rem solid #fff;
   width: 5rem;
@@ -31,12 +38,23 @@
 
 .cattos__bar {
   margin-top: 3px;
+  width: 26px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+  border-radius: 12px;
 }
 
 .cattos__tab__change {
   width: 12.1875rem;
   background: #0b395a;
   border: initial;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  margin: 0rem 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nftconnect__icon {
@@ -46,6 +64,43 @@
   object-fit: contain;
 }
 
+/* Media-Queries */
 
+@media (max-width: 992px) {
+  .cattos__logo {
+    max-width: 230px;
+    object-fit: contain;
+  }
+  .cattos__tab {
+    width: 70px;
+    margin: 0px 6px;
+  }
 
+  .cattos__tab__change a {
+    font-size: 0.8rem;
+  }
+  .cattos__tab a {
+    font-size: 0.8rem;
+  }
+  .cattos__tab.cattos__tab__change {
+    width: 168px;
+  }
 
+  .cattos__bar {
+    width: 24px;
+    height: 3px;
+  }
+}
+@media (max-width: 762px) {
+  .cattos__tabBox {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: initial;
+  }
+  .cattos__tabBox li {
+    margin-bottom: 10px;
+  }
+  .cattos__content {
+    flex-direction: column;
+  }
+}
