@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/navbar.module.css";
+import { NavBarItem } from "../NavBarItem";
 
 export const NavBar = function index() {
   return (
@@ -7,48 +8,37 @@ export const NavBar = function index() {
       <img className={`${styles.cattos__logo}`} src="/logo.png" alt="missing" />
 
       <ul className={`nav nav-tabs ${styles.cattos__tabBox}`}>
-        <li className={`active ${styles.cattos__tab}`}>
-          <a
-            className={styles.cattos__tab__anchor}
-            data-toggle="tab"
-            href="#home"
-          >
-            Buy
-          </a>
-        </li>
-        <li className={`${styles.cattos__tab}`}>
-          <a
-            className={styles.cattos__tab__anchor}
-            data-toggle="tab"
-            href="#menu1"
-          >
-            Mint
-          </a>
-        </li>
-        <li className={`${styles.cattos__tab}`}>
-          <a
-            className={styles.cattos__tab__anchor}
-            data-toggle="tab"
-            href="#menu2"
-          >
-            Stake
-          </a>
-        </li>
-        <li className={`${styles.cattos__tab__change}`}>
-          <a
-            className={styles.cattos__tab__anchor}
-            data-toggle="tab"
-            href="#menu3"
-          >
-            <img
-              className={`${styles.nftconnect__icon}`}
-              src="/wallet-icon.png"
-              alt="missing"
-            />
-            Connect Wallet
-          </a>
-        </li>
-        <li className={`${styles.cattos__bar}`} onclick="myFunction(this)">
+        <NavBarItem
+          dataToggle={"tab"}
+          title={"Buy"}
+          hrefValue={"#home"}
+          liClassName={`active ${styles.cattos__tab}`}
+        />
+        <NavBarItem
+          dataToggle={"tab"}
+          title={"Mint"}
+          hrefValue={"#menu1"}
+          liClassName={`${styles.cattos__tab}`}
+        />
+        <NavBarItem
+          dataToggle={"tab"}
+          title={"Stake"}
+          hrefValue={"#menu2"}
+          liClassName={`${styles.cattos__tab}`}
+        />
+        <NavBarItem
+          dataToggle={"tab"}
+          title={"Connect Wallet"}
+          hrefValue={"#menu3"}
+          liClassName={`${styles.cattos__tab__change}`}
+        >
+          <img
+            className={`${styles.nftconnect__icon}`}
+            src="/wallet-icon.png"
+            alt="missing"
+          />
+        </NavBarItem>
+        <li className={`${styles.cattos__bar}`}>
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>

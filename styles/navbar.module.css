@@ -19,12 +19,6 @@
   align-items: center;
 }
 
-.cattos__tab__anchor {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
 .cattos__tab {
   border: 0.125rem solid #fff;
   width: 5rem;
