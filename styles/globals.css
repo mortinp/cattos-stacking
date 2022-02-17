@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* when using animations use this to avoid scrollbars!
+                 body::-webkit-scrollbar {
+                    display: none;
+                  } */
+::-webkit-scrollbar {
+  width: 0.4375rem;
+  height: 0.4375rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 rgb(0 0 0 / 30%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #918476;
+  border-radius: 1.25rem 7.75rem 1.25rem 7.75rem;
+}
+.container {
+  max-width: 120rem;
+  padding: 0rem 0.9375rem;
+  width: 100%;
+  margin: auto;
+}
+/* menu toggle burger bar */
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 1.625rem;
+  height: 0.25rem;
+  background-color: #fff;
+  margin: 0.25rem 0;
+  transition: 0.4s;
+  border-radius: 0.75rem;
+}
+.nav-tabs {
+  border-bottom: initial;
+}
+
+/* cattos start */
+.cattos {
+  height: 100vh;
+  z-index: 22;
+  background: url(/Cattos.png) no-repeat #22577e;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  overflow: auto;
+}
+.cattos__logo {
+  width: 100%;
+  max-width: 22.1875rem;
+  height: 6rem;
+  object-fit: cover;
+}
+
+.cattos .cattos__tabBox {
+  align-items: center;
+}
+
+.cattos__tab a {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.cattos__tab {
+  border: 0.125rem solid #fff;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  margin: 0rem 0.75rem;
+}
+.cattos__content {
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.25rem;
+}
+.cattos__tab.cattos__tab--change {
+  width: 12.1875rem;
+  background: #0b395a;
+  border: initial;
+}
+
+.cattos .nftconnect__icon {
+  width: 1.1875rem;
+  height: 1.1875rem;
+  object-fit: contain;
+  margin-right: 0.375rem;
+}
+.cattos__slide {
+  margin: auto;
+  text-align: center;
+}
+
+.cattos__title {
+  color: #fff;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 24.375rem;
+  margin: auto;
+}
+
+.cattos__detail {
+  color: #fff;
+  font-weight: 700;
+  padding: 1.625rem;
+  width: 100%;
+  max-width: 36.75rem;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.cattos__number {
+  color: #fe97c6;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.8125rem;
+}
+
+.cattos__cost {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #fff;
+  width: 100%;
+  max-width: 230px;
+  margin: auto;
+  padding: 1.3125rem 0 0.625rem;
+}
+
+.cattos .cattos__tabBox--slider {
+  justify-content: center;
+}
+
+.cattos .cattos__tab--slider {
+  width: 9.0625rem;
+  margin: 0 3.125rem;
+}
+
+.cattos .slick-dots li.slick-active button:before {
+  color: transparent;
+  opacity: 1;
+  background: #ffff;
+}
+
+.cattos .slick-dots li button:before {
+  font-size: 0.8125rem;
+}
+
+.cattos .slick-dots li button:before {
+  color: transparent;
+  border: 0.125rem solid #fff;
+  border-radius: 50%;
+  height: 0.8125rem;
+  width: 0.8125rem;
+  opacity: 1;
+}
+.cattos__bottom {
+  padding: 10rem 0 3.125rem;
+}
+
+.cattos .slick-dots {
+  top: 11.375rem;
+}
+
+.cattos .slick-dots li {
+  margin: 0 0.125rem;
+}
+.cattos .cattos__tabInfo {
+  width: 100%;
+  max-width: 75rem;
+  margin: auto;
+  padding: 5.3125rem 0 0;
+}
+/* ================================== Media-Queries ===================================== */
+
+@media (max-width: 992px) {
+  .cattos__logo {
+    max-width: 230px;
+    object-fit: contain;
+  }
+  .cattos__tab {
+    width: 70px;
+    margin: 0 6px;
+  }
+  .cattos__tab a {
+    font-size: 0.8em;
+  }
+  .cattos__tab.cattos__tab--change {
+    width: 168px;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 24px;
+    height: 3px;
+  }
+  .cattos__title {
+    font-size: 35px;
+  }
+  .cattos__detail {
+    font-size: 1rem;
+  }
+  .cattos__number {
+    font-size: 2rem;
+  }
+  .cattos .cattos__tab--slider {
+    max-width: 95px;
+    width: 100%;
+  }
+}
+@media (max-width: 762px) {
+  .cattos__content {
+    flex-direction: column;
+  }
+  .cattos .cattos__tabBox {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: initial;
+  }
+  .cattos__tab {
+    margin-bottom: 10px;
+  }
+  .cattos__bar {
+    margin-top: 3px;
+  }
+  .cattos .cattos__tab--slider {
+    margin: 10px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .cattos__title {
+    font-size: 30px;
+  }
+  .cattos__detail {
+    font-size: 0.9rem;
+  }
+  .cattos__number {
+    font-size: 1.9rem;
+  }
+  .cattos__cost {
+    font-size: 1rem;
+  }
+}
