@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { SliderListItem } from "../../components";
 import styles from "../../styles/slidersection.module.css";
 
 export const SliderSection = function index() {
@@ -30,15 +31,9 @@ export const SliderSection = function index() {
                   <div className={`${styles.cattos__bottom}`}>
                     <h4 className={`${styles.cattos__number}`}>0 / 10000</h4>
                     <ul className={`d-flex ${styles.cattos__tabBox__slider}`}>
-                      <li className={`${styles.cattos__tab__slider}`}>
-                        <a href="">Road Map</a>
-                      </li>
-                      <li className={`${styles.cattos__tab__slider}`}>
-                        <a href="">Oasis</a>
-                      </li>
-                      <li className={`${styles.cattos__tab__slider}`}>
-                        <a href="">Rarity</a>
-                      </li>
+                      <SliderListItem title={"Road Map"} />
+                      <SliderListItem title={"Oasis"} />
+                      <SliderListItem title={"Rarity"} />
                     </ul>
                     <h5 className={`${styles.cattos__cost}`}>
                       1 CTN costs 0.0013 BCH Excluding gas fees,
@@ -58,15 +53,9 @@ export const SliderSection = function index() {
                   </h3>
                   <div className={`${styles.cattos__bottom}`}>
                     <ul className={`d-flex ${styles.cattos__tabBox__slider}`}>
-                      <li className={`${styles.cattos__tab__slider}`}>
-                        <a href="">Buy USDT</a>
-                      </li>
-                      <li className={`${styles.cattos__tab__slider}`}>
-                        <a href="">Buy smartBCH</a>
-                      </li>
-                      <li className={`${styles.cattos__tab__slider}`}>
-                        <a href="">Buy smartBCH</a>
-                      </li>
+                      <SliderListItem title={"Buy USDT"} />
+                      <SliderListItem title={"Buy smartBCH"} />
+                      <SliderListItem title={"Buy smartBCH"} />
                     </ul>
                     <h5 className={`${styles.cattos__cost}`}>
                       1 CTN costs 0.0013 BCH Excluding gas fees,
@@ -88,15 +77,9 @@ export const SliderSection = function index() {
                   </h3>
                   <div className={`${styles.cattos__bottom}`}>
                     <ul className={`d-flex ${styles.cattos__tabBox__slider}`}>
-                      <li className={`${styles.cattos__tab__slider}`}>
-                        <a href="">Stake</a>
-                      </li>
-                      <li className={`${styles.cattos__tab__slider}`}>
-                        <a href="">Unstake</a>
-                      </li>
-                      <li className={`${styles.cattos__tab__slider}`}>
-                        <a href="">Withdraw</a>
-                      </li>
+                      <SliderListItem title={"Stake"} />
+                      <SliderListItem title={"Unstake"} />
+                      <SliderListItem title={"Withdraw"} />
                     </ul>
                   </div>
                 </div>
