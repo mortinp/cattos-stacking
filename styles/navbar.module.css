@@ -1,0 +1,53 @@
+.cattos__content {
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.25rem;
+}
+
+.cattos__logo {
+  width: 100%;
+  max-width: 22.1875rem;
+  height: 6rem;
+  object-fit: cover;
+}
+
+.nav-tabs {
+  border-bottom: initial;
+}
+
+.cattos__tabBox {
+  align-items: center;
+}
+
+.cattos__tab__anchor {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.cattos__tab {
+  border: 0.125rem solid #fff;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+  margin: 0rem 0.75rem;
+}
+
+.cattos__bar {
+  margin-top: 3px;
+}
+
+.cattos__tab__change {
+  width: 12.1875rem;
+  background: #0b395a;
+  border: initial;
+}
+
+.nftconnect__icon {
+  width: 1.1875rem;
+  height: 1.1875rem;
+  margin-right: 0.375rem;
+  object-fit: contain;
+}
