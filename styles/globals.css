@@ -48,30 +48,6 @@ body {
   overflow: auto;
 }
 
-.cattos__number {
-  color: #fe97c6;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 2.8125rem;
-}
-
-.cattos__cost {
-  font-size: 1.1rem;
-  font-weight: 300;
-  color: #fff;
-  width: 100%;
-  max-width: 230px;
-  margin: auto;
-  padding: 1.3125rem 0 0.625rem;
-}
-
-
-
-.cattos .cattos__tab--slider {
-  width: 9.0625rem;
-  margin: 0 3.125rem;
-}
-
 .cattos .slick-dots li.slick-active button:before {
   color: transparent;
   opacity: 1;
@@ -90,7 +66,6 @@ body {
   width: 0.8125rem;
   opacity: 1;
 }
-
 
 .cattos .slick-dots {
   top: 11.375rem;

@@ -28,19 +28,19 @@ export const SliderSection = function index() {
                     application we will use it for passive
                   </h3>
                   <div className={`${styles.cattos__bottom}`}>
-                    <h4 className="cattos__number">0 / 10000</h4>
-                    <ul className="d-flex cattos__tabBox cattos__tabBox--slider">
-                      <li className="cattos__tab cattos__tab--slider">
+                    <h4 className={`${styles.cattos__number}`}>0 / 10000</h4>
+                    <ul className={`d-flex ${styles.cattos__tabBox__slider}`}>
+                      <li className={`${styles.cattos__tab__slider}`}>
                         <a href="">Road Map</a>
                       </li>
-                      <li className="cattos__tab cattos__tab--slider">
+                      <li className={`${styles.cattos__tab__slider}`}>
                         <a href="">Oasis</a>
                       </li>
-                      <li className="cattos__tab cattos__tab--slider">
+                      <li className={`${styles.cattos__tab__slider}`}>
                         <a href="">Rarity</a>
                       </li>
                     </ul>
-                    <h5 className="cattos__cost">
+                    <h5 className={`${styles.cattos__cost}`}>
                       1 CTN costs 0.0013 BCH Excluding gas fees,
                     </h5>
                     <h3 className={`${styles.cattos__detail}`}>
@@ -57,18 +57,18 @@ export const SliderSection = function index() {
                     application we will use it for passive
                   </h3>
                   <div className={`${styles.cattos__bottom}`}>
-                    <ul className="d-flex cattos__tabBox cattos__tabBox--slider">
-                      <li className="cattos__tab cattos__tab--slider">
+                    <ul className={`d-flex ${styles.cattos__tabBox__slider}`}>
+                      <li className={`${styles.cattos__tab__slider}`}>
                         <a href="">Buy USDT</a>
                       </li>
-                      <li className="cattos__tab cattos__tab--slider">
+                      <li className={`${styles.cattos__tab__slider}`}>
                         <a href="">Buy smartBCH</a>
                       </li>
-                      <li className="cattos__tab cattos__tab--slider">
+                      <li className={`${styles.cattos__tab__slider}`}>
                         <a href="">Buy smartBCH</a>
                       </li>
                     </ul>
-                    <h5 className="cattos__cost">
+                    <h5 className={`${styles.cattos__cost}`}>
                       1 CTN costs 0.0013 BCH Excluding gas fees,
                     </h5>
                     <h3 className={`${styles.cattos__detail}`}>
@@ -87,14 +87,14 @@ export const SliderSection = function index() {
                     application we will use it for passive
                   </h3>
                   <div className={`${styles.cattos__bottom}`}>
-                    <ul className={`d-flex cattos__tabBox ${cattos__tabBox--slider}`}>
-                      <li className="cattos__tab cattos__tab--slider">
+                    <ul className={`d-flex ${styles.cattos__tabBox__slider}`}>
+                      <li className={`${styles.cattos__tab__slider}`}>
                         <a href="">Stake</a>
                       </li>
-                      <li className="cattos__tab cattos__tab--slider">
+                      <li className={`${styles.cattos__tab__slider}`}>
                         <a href="">Unstake</a>
                       </li>
-                      <li className="cattos__tab cattos__tab--slider">
+                      <li className={`${styles.cattos__tab__slider}`}>
                         <a href="">Withdraw</a>
                       </li>
                     </ul>
