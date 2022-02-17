@@ -11,7 +11,7 @@ export default function Home() {
   );
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Ethereum</title>
         <meta name="description" content="Ethereum" />
@@ -155,6 +155,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
