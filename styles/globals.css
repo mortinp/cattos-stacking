@@ -89,7 +89,7 @@ body {
   .cattos__tab a {
     font-size: 0.8em;
   }
-  .cattos__tab.cattos__tab--change {
+  .cattos__tab.cattos__tab__change {
     width: 168px;
   }
   .bar1,
@@ -107,7 +107,7 @@ body {
   .cattos__number {
     font-size: 2rem;
   }
-  .cattos .cattos__tab--slider {
+  .cattos .cattos__tab__slider {
     max-width: 95px;
     width: 100%;
   }
@@ -126,7 +126,7 @@ body {
     margin-bottom: 10px;
   }
 
-  .cattos .cattos__tab--slider {
+  .cattos .cattos__tab__slider {
     margin: 10px 20px;
   }
 }
